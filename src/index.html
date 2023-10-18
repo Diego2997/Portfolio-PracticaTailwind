@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-dm-sans bg-color-background text-white">
+    <div class="w-[90%] mx-auto overflow-hidden max-w-screen-xl">
+        <header>
+            <nav class="flex h-20 items-center justify-between">
+                <a href="#" class="block w-full">
+                    <h2 class="w-[200px]">Diego Mercado</h2>
+                </a>
+                <input type="checkbox" id="menu" class="peer/menu hidden">
+                <label for="menu"
+                    class="w-10 h-10 bg-open-menu cursor-pointer bg-cover bg-center bg-green-color rounded-lg peer-checked/menu:bg-close-menu transition-all z-40 md:hidden"></label>
+                <ul class="fixed inset-0 bg-menu-color px-[5%] grid gap-6
+                    
+                    auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 
+                    
+                    md:clip-circle-full md:relative md:grid-flow-col md:p-0 md:bg-transparent">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="pt-10 pb-16 md:flex md:justify-between items-center gap-8">
+                <figure class="md:order-1">
+                    <img src="./assets/diego.jpeg" alt=""
+                        class="w-[90%] aspect-square object-cover rounded-full max-w-sm mx-auto bg-left">
+                </figure>
+                <article class="text-center mt-8 md:w-1/2 md:text-left">
+                    <h1 class="text-4xl md:text-5xl">
+                        Hi, I am Diego Mercado.
+                    </h1>
+                    <p class="text-gray-color text-xl mt-3 mb-6">Full Stack Developer</p>
+                    <div
+                        class="flex flex-col justify-center items-center gap-6 md:flex-row md:max-w-lg mx-auto md:mx-0 md:text-center">
+                        <a href="https://drive.google.com/file/d/19J_pRkqftTlW1sJOG0ot53ywhYU9D9fM/view?usp=sharing"
+                            download="CV-DiegoMercado.pdf"
+                            class="bg-green-color  d-block w-full p-4 md:min-w-[170px]">Download
+                            CV</a>
+                        <a href="#" class="d-block w-full p-4 border-white border md:min-w-[170px]">Learn
+                            More</a>
+                    </div>
+                </article>
+            </section>
+        </header>
+        <main>
+            <section class="py-16 text-center">
+                <h2 class="text-4xl md:text-5xl">About</h2>
+                <p class="mt-8 mb-16 leading-normal text-gray-color md:w-4/5 md:mx-auto">Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit. Quia modi distinctio accusamus dolor
+                    adipisci ea qui id aspernatur rerum dignissimos.</p>
+                <div class="flex flex-col gap-8  justify-items-center items-center md:flex-row md:justify-between">
+                    <article class="w-max grid justify-items-center ">
+                        <div class="icons-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons">
+                                <path
+                                    d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl mt-4 mb-2">Email</h3>
+                        <p class="font-light">fmercadodiego@gmail.com</p>
+                    </article>
+                    <article class="w-max grid justify-items-center ">
+                        <div class="icons-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" aria-colspan="icons" viewBox="0 0 24 24"
+                                class="icons">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl mt-4 mb-2">Github</h3>
+                        <p class="font-light">github.com/Diego2997</p>
+                    </article>
+                    <article class="w-max grid justify-items-center ">
+                        <div class="icons-container">
+                            <a href="https://www.linkedin.com/in/fdmercado/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icons">
+                                    <path
+                                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <h3 class="text-2xl mt-4 mb-2">Linkedin</h3>
+                        <p class="font-light">fdmercado</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
