@@ -33,15 +33,15 @@
                     
                     auto-rows-max content-center justify-items-center clip-circle-0 peer-checked/menu:clip-circle-full transition-[clip-path] duration-500 
                     
-                    md:clip-circle-full md:relative md:grid-flow-col md:p-0 md:bg-transparent">
-                    <li>
-                        <a href="#">About</a>
+                    md:clip-circle-full md:relative md:grid-flow-col md:p-0 md:bg-transparent" id="ul">
+                    <li class="navjs">
+                        <a href="#about" class="navjs">About</a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <li class="navjs">
+                        <a href="#services" class="navjs">Services</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="navjs">
+                        <a href="#contact" class="navjs">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -68,7 +68,7 @@
             </section>
         </header>
         <main>
-            <section class="py-16 text-center">
+            <section class="py-16 text-center" id="about">
                 <h2 class="text-4xl md:text-5xl">About</h2>
                 <p class="mt-8 mb-16 leading-normal text-gray-color md:w-4/5 md:mx-auto">Lorem ipsum dolor sit amet
                     consectetur adipisicing
@@ -113,7 +113,7 @@
                     </article>
                 </div>
             </section>
-            <section class="py-16">
+            <section class="py-16" id="services">
                 <h2 class="text-4xl text-center mb-16 md:text-5xl">What i do</h2>
                 <div class="flex flex-col gap-8 md:flex-row md:justify-center">
                     <article
@@ -155,7 +155,7 @@
                     </article>
                 </div>
             </section>
-            <section class="py-16 text-center">
+            <section class="py-16 text-center" id="contact">
                 <h2 class="text-4xl mb-16 md:text-5xl">My Skills</h2>
                 <div
                     class="flex flex-col items-center gap-12 bg-card-color py-12 px-8 text-gray-color place-items-center justify-center md:flex-row md:justify-between ">

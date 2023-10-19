@@ -1,6 +1,10 @@
 const form = document.getElementById("form"),
     btn = document.getElementById("button");
 
+let menu = document.getElementById("menu"),
+    navjs = document.querySelectorAll(".navjs"),
+    ul = document.getElementById("ul");
+
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     btn.value = "Sending...";
@@ -25,4 +29,15 @@ form.addEventListener("submit", (e) => {
             );
         }
     );
+});
+
+navjs.forEach((enlace) => {
+    enlace.addEventListener("click", () => {
+        if (menu.checked) {
+            menu.checked = false;
+            ul.classList.remove("peer-checked/menu:clip-circle-full");
+        } else {
+            ul.classList.add("peer-checked/menu:clip-circle-full");
+        }
+    });
 });
